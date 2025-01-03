@@ -6,7 +6,9 @@ const ColourSelector = ({ config, selectNextBackground }) => {
   };
 
   return (
-    <button className={config.classname} onClick={handleClick}>
+    <button
+    data-testid={config.key}
+    className={config.classname} onClick={handleClick}>
       {config.label}
     </button>
   );
